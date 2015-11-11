@@ -14,7 +14,7 @@ $ apt-get install libmcrypt4
 
 ```bash
 $ cd /usr/local/
-$ git clone https://git.anezi.net/binary/php7-ubuntu-14.04-64 php7
+$ git clone https://github.com/anezi/php7.git php7
 ```
 
 ### Copy pear configuration
