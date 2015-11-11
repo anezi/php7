@@ -4,6 +4,12 @@ PHP7 Binary for Ubuntu 14.04 64bits and compatibles OS.
 Installation
 ------------
 
+### Install the dependencies
+
+```bash
+$ apt-get install libmcrypt-dev
+```
+
 ### Clone the repository
 
 ```bash
