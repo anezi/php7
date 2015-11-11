@@ -1,3 +1,8 @@
 /etc/php-fpm.conf
 /etc/php-fpm.d/*
 !/etc/php-fpm.d/www.conf.default
+/run/*
+!/run/.gitkeep
+/log/*
+!/log/.gitkeep
+
