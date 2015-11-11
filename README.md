@@ -7,7 +7,7 @@ Installation
 ### Install the dependencies
 
 ```bash
-$ apt-get install libmcrypt-dev
+$ apt-get install libmcrypt4
 ```
 
 ### Clone the repository
