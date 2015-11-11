@@ -14,7 +14,7 @@ $ git clone https://git.anezi.net/binary/php7-ubuntu-14.04-64 php7
 ### Copy pear configuration
 
 ```bash
-$ cd /usr/local/php7/etc/pear.conf.default /etc/pear.conf
+$ cp /usr/local/php7/etc/pear.conf.default /etc/pear.conf
 ```
 
 ### Configuration of PHP7-FPM
