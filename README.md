@@ -1,6 +1,22 @@
 PHP7 Binary for Ubuntu 14.04 64bits and compatibles OS.
 =======================================================
 
+Installation
+------------
+
+### Clone the repository
+
+```bash
+$ cd /usr/local/
+$ git clone https://git.anezi.net/binary/php7-ubuntu-14.04-64 php7
+```
+
+### Copy pear configuration
+
+```bash
+$ cd /usr/local/php7/etc/pear.conf.default /etc/pear.conf
+```
+
 Update the repository binary
 ----------------------------
 
@@ -51,4 +67,3 @@ make test
 # Installation
 sudo make install
 ```
-
