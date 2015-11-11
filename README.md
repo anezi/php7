@@ -3,48 +3,40 @@ PHP7 Binary for Ubuntu 14.04 64bits and compatibles OS.
 
 1. Installation: Simple install of pre compiled PHP7 binary (Compiled in Ubuntu 12.04 64-bits)
 2. Compilation from sources: Instructions to compile and install PHP7 from sources.
+3. Configuration: To be done in both situations.
 
 1. Installation
 ---------------
 
-### 1.1 Install the dependencies
+### 1.1. Install the dependencies
 
 ```bash
 $ apt-get install libmcrypt4
 ```
 
-### 1.2 Clone the repository
+### 1.2. Clone the repository
 
 ```bash
 $ cd /usr/local/
 $ git clone https://github.com/anezi/php7.git php7
 ```
 
-### 1.3 Copy pear configuration
+### 1.3. Copy pear configuration
 
 ```bash
 $ cp /usr/local/php7/etc/pear.conf.default /etc/pear.conf
-$ cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
-$ cp /usr/local/php7/etc/php-fpm.d/www.conf.default /usr/local/php7/etc/php-fpm.d/www.conf
-```
-
-### 1.4 Configuration of PHP7-FPM
-
-```bash
-$ cp /usr/local/php7/etc/init.d/php7-fpm.default /etc/init.d/php7-fpm
-$ cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
 ```
 
 2. Compilation from sources
 ---------------------------
 
-### 2.1 Install compilation dependencies
+### 2.1. Install compilation dependencies
 
 ```bash
 $ sudo apt-get install bison libcurl4-openssl-dev
 ```
 
-### 2.2 Download and extract the files
+### 2.2. Download and extract the files
 
 ```bash
 $ cd /tmp
@@ -56,7 +48,7 @@ $ wget https://github.com/php/php-src/archive/php-7.0.0RC7.tar.gz
 $ tar -zxvf php-7.0.0RC7.tar.gz
 ```
 
-### 2.3 Compilation
+### 2.3. Compilation
 
 ```bash
 $ cd php-src-php-7.0.0RC7
@@ -79,9 +71,33 @@ make
 make test
 ```
 
-### 2.4 Installation
+### 2.4. Installation
 
 ```bash
 # Installation
 sudo make install
+```
+
+2. Configuration
+----------------
+
+### 2.1. PHP Configuration
+
+```bash
+# For production server:
+$ cp /usr/local/php7/lib/php.ini-production /usr/local/php7/lib/php.ini
+
+# For development server:
+$ cp /usr/local/php7/lib/php.ini-development /usr/local/php7/lib/php.ini
+```
+
+
+### 2.1. FPM Configuration
+
+```bash
+$ cp /usr/local/php7/etc/init.d/php7-fpm.default /etc/init.d/php7-fpm
+$ cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
+
+# Default pool
+$ cp /usr/local/php7/etc/php-fpm.d/www.conf.default /usr/local/php7/etc/php-fpm.d/www.conf
 ```
