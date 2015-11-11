@@ -4,10 +4,10 @@
 if test "x$PHP_PEAR_PHP_BIN" != "x"; then
   PHP="$PHP_PEAR_PHP_BIN"
 else
-  if test "/bin/php" = '@'php_bin'@'; then
+  if test "/usr/local/php7/bin/php" = '@'php_bin'@'; then
     PHP=php
   else
-    PHP="/bin/php"
+    PHP="/usr/local/php7/bin/php"
   fi
 fi
 
