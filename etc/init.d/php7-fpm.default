@@ -11,7 +11,7 @@
 
 PHP_FPM_BIN=/usr/local/php7/sbin/php-fpm
 PHP_FPM_CONF=/usr/local/php7/etc/php-fpm.conf
-PHP_FPM_PID=/usr/local/php7/var/run/php-fpm.pid
+PHP_FPM_PID=/usr/local/php7/run/php-fpm.pid
 PHP_OPTS="--fpm-config $PHP_FPM_CONF -p /usr/local/php7"
 
 wait_for_pid ()
