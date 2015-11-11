@@ -22,6 +22,7 @@ $ git clone https://git.anezi.net/binary/php7-ubuntu-14.04-64 php7
 ```bash
 $ cp /usr/local/php7/etc/pear.conf.default /etc/pear.conf
 $ cp /usr/local/php7/etc/php-fpm.conf.default /usr/local/php7/etc/php-fpm.conf
+$ cp /usr/local/php7/etc/php-fpm.d/www.conf.default /usr/local/php7/etc/php-fpm.d/www.conf
 ```
 
 ### Configuration of PHP7-FPM
