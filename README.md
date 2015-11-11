@@ -17,6 +17,12 @@ $ git clone https://git.anezi.net/binary/php7-ubuntu-14.04-64 php7
 $ cd /usr/local/php7/etc/pear.conf.default /etc/pear.conf
 ```
 
+### Configuration of PHP7-FPM
+
+```bash
+$ cp /usr/local/php7/etc/init.d/php7-fpm.default /etc/init.d/php7-fpm
+```
+
 Update the repository binary
 ----------------------------
 
