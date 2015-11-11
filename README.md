@@ -56,7 +56,7 @@ $ tar -zxvf php-7.0.0RC7.tar.gz
 ### Compilation
 
 ```bash
-$ cd php-7.0.0RC7
+$ cd php-src-php-7.0.0RC7
 
 # Build configuration
 ./buildconf --force
